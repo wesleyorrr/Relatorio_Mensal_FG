@@ -60,6 +60,6 @@ function enviarWhatsApp() {
         return;
     }
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=<038999894056>&text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=<5538999894056>&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
