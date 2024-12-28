@@ -104,4 +104,9 @@ th, td {
     th, td {
         font-size: 0.7em;
     }
+
+    .compact-table th, .compact-table td {
+        padding: 3px; /* Further reduced padding for compactness */
+        font-size: 0.65em; /* Further reduced font size for compactness */
+    }
 }
