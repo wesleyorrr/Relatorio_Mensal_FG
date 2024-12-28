@@ -17,7 +17,6 @@ form {
 h1, h2 {
     color: #333;
     font-size: 1.5em;
-    margin-bottom: 10px;
 }
 
 label {
@@ -34,11 +33,6 @@ input[type="text"], textarea, select {
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 0.9em;
-}
-
-.small-input {
-    width: 80%;
-    padding: 4px;
 }
 
 input[type="radio"] {
@@ -73,10 +67,15 @@ table {
 }
 
 th, td {
-    padding: 5px;
+    padding: 5px; /* Reduced padding for compactness */
     border: 1px solid #ccc;
-    text-align: left;
-    font-size: 0.8em;
+    text-align: center; /* Center text for better alignment */
+    font-size: 0.8em; /* Reduced font size for compactness */
+}
+
+.compact-table th, .compact-table td {
+    padding: 5px; /* Further reduced padding for compactness */
+    font-size: 0.75em; /* Further reduced font size for compactness */
 }
 
 /* Responsividade */
@@ -95,11 +94,6 @@ th, td {
 
     input[type="text"], textarea, select {
         font-size: 0.8em;
-    }
-
-    .small-input {
-        width: 70%;
-        padding: 2px;
     }
 
     button {
