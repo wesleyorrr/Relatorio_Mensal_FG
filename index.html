@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Mensal Family Group</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="relatorioForm">
+        <h1>Relatório Mensal Family Group</h1>
+
+        <label for="rede">Rede:</label>
+        <input type="text" id="rede" name="rede" required><br><br>
+
+        <label for="servoLider">Servo Líder:</label>
+        <input type="text" id="servoLider" name="servoLider" required><br><br>
+
+        <label for="supervisor">Supervisor:</label>
+        <input type="text" id="supervisor" name="supervisor" required><br><br>
+
+        <label for="anfitriao">Anfitrião:</label>
+        <input type="text" id="anfitriao" name="anfitriao" required><br><br>
+
+        <label for="diaReuniao">Dia da Reunião:</label>
+        <input type="text" id="diaReuniao" name="diaReuniao" required><br><br>
+
+        <label for="tipoFamilyGroup">Family Group de:</label>
+        <div class="radio-group">
+            <input type="radio" id="mista" name="tipoFamilyGroup" value="Mista">
+            <label for="mista">Mista</label>
+            <input type="radio" id="jovens" name="tipoFamilyGroup" value="Jovens">
+            <label for="jovens">Jovens</label>
+            <input type="radio" id="criancas" name="tipoFamilyGroup" value="Crianças">
+            <label for="criancas">Crianças</label>
+            <input type="radio" id="outras" name="tipoFamilyGroup" value="Outras">
+            <label for="outras">Outras</label>
+        </div>
+        <br>
+
+        <label for="horario">Horário:</label>
+        <input type="text" id="horario" name="horario" required><br><br>
+
+        <label for="mesAno">Mês/Ano:</label>
+        <input type="text" id="mesAno" name="mesAno" required><br><br>
+
+        <label for="previsaoMultiplicacao">Previsão da Multiplicação:</label>
+        <input type="text" id="previsaoMultiplicacao" name="previsaoMultiplicacao" required><br><br>
+
+        <h2>Presença nos Cultos de Celebração</h2>
+        <table>
+            <tr>
+                <th>Semana</th>
+                <th>Presença</th>
+            </tr>
+            <tr>
+                <td>1ª Semana</td>
+                <td><input type="text" name="culto1"></td>
+            </tr>
+            <tr>
+                <td>2ª Semana</td>
+                <td><input type="text" name="culto2"></td>
+            </tr>
+            <tr>
+                <td>3ª Semana</td>
+                <td><input type="text" name="culto3"></td>
+            </tr>
+            <tr>
+                <td>4ª Semana</td>
+                <td><input type="text" name="culto4"></td>
+            </tr>
+            <tr>
+                <td>5ª Semana</td>
+                <td><input type="text" name="culto5"></td>
+            </tr>
+        </table>
+        <br>
+
+        <h2>Presença no CSE</h2>
+        <table>
+            <tr>
+                <th>Semana</th>
+                <th>Presença</th>
+            </tr>
+            <tr>
+                <td>1ª Semana</td>
+                <td><input type="text" name="cse1"></td>
+            </tr>
+            <tr>
+                <td>2ª Semana</td>
+                <td><input type="text" name="cse2"></td>
+            </tr>
+            <tr>
+                <td>3ª Semana</td>
+                <td><input type="text" name="cse3"></td>
+            </tr>
+            <tr>
+                <td>4ª Semana</td>
+                <td><input type="text" name="cse4"></td>
+            </tr>
+            <tr>
+                <td>5ª Semana</td>
+                <td><input type="text" name="cse5"></td>
+            </tr>
+        </table>
+        <br>
+
+        <h2>Presença nos Grupos de Família</h2>
+        <table class="compact-table">
+            <tr>
+                <th>Semana</th>
+                <th>Adolescentes</th>
+                <th>Homens Solteiros</th>
+                <th>Mulheres Solteiras</th>
+                <th>Homens Casados</th>
+                <th>Mulheres Casadas</th>
+                <th>Visitantes</th>
+                <th>Conversões</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>1ª Semana</td>
+                <td><input type="text" name="grupoAdolescentes1" class="small-input"></td>
+                <td><input type="text" name="grupoHomensSolteiros1" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresSolteiras1" class="small-input"></td>
+                <td><input type="text" name="grupoHomensCasados1" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresCasadas1" class="small-input"></td>
+                <td><input type="text" name="grupoVisitantes1" class="small-input"></td>
+                <td><input type="text" name="grupoConversoes1" class="small-input"></td>
+                <td><input type="text" name="grupoTotalGeral1" class="small-input"></td>
+            </tr>
+            <tr>
+                <td>2ª Semana</td>
+                <td><input type="text" name="grupoAdolescentes2" class="small-input"></td>
+                <td><input type="text" name="grupoHomensSolteiros2" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresSolteiras2" class="small-input"></td>
+                <td><input type="text" name="grupoHomensCasados2" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresCasadas2" class="small-input"></td>
+                <td><input type="text" name="grupoVisitantes2" class="small-input"></td>
+                <td><input type="text" name="grupoConversoes2" class="small-input"></td>
+                <td><input type="text" name="grupoTotalGeral2" class="small-input"></td>
+            </tr>
+            <tr>
+                <td>3ª Semana</td>
+                <td><input type="text" name="grupoAdolescentes3" class="small-input"></td>
+                <td><input type="text" name="grupoHomensSolteiros3" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresSolteiras3" class="small-input"></td>
+                <td><input type="text" name="grupoHomensCasados3" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresCasadas3" class="small-input"></td>
+                <td><input type="text" name="grupoVisitantes3" class="small-input"></td>
+                <td><input type="text" name="grupoConversoes3" class="small-input"></td>
+                <td><input type="text" name="grupoTotalGeral3" class="small-input"></td>
+            </tr>
+            <tr>
+                <td>4ª Semana</td>
+                <td><input type="text" name="grupoAdolescentes4" class="small-input"></td>
+                <td><input type="text" name="grupoHomensSolteiros4" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresSolteiras4" class="small-input"></td>
+                <td><input type="text" name="grupoHomensCasados4" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresCasadas4" class="small-input"></td>
+                <td><input type="text" name="grupoVisitantes4" class="small-input"></td>
+                <td><input type="text" name="grupoConversoes4" class="small-input"></td>
+                <td><input type="text" name="grupoTotalGeral4" class="small-input"></td>
+            </tr>
+            <tr>
+                <td>5ª Semana</td>
+                <td><input type="text" name="grupoAdolescentes5" class="small-input"></td>
+                <td><input type="text" name="grupoHomensSolteiros5" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresSolteiras5" class="small-input"></td>
+                <td><input type="text" name="grupoHomensCasados5" class="small-input"></td>
+                <td><input type="text" name="grupoMulheresCasadas5" class="small-input"></td>
+                <td><input type="text" name="grupoVisitantes5" class="small-input"></td>
+                <td><input type="text" name="grupoConversoes5" class="small-input"></td>
+                <td><input type="text" name="grupoTotalGeral5" class="small-input"></td>
+            </tr>
+        </table>
+        <br>
+
+        <label for="nomesCSE">Nome das Pessoas em CSE:</label><br>
+        <textarea id="nomesCSE" name="nomesCSE" rows="4" cols="50"></textarea><br><br>
+
+        <div class="inline-group">
+            <label for="discipulado">Está sendo discipulada?</label><br>
+            <input type="radio" id="discipuladoSim" name="discipulado" value="Sim">
+            <label for="discipuladoSim">Sim</label>
+            <input type="radio" id="discipuladoNao" name="discipulado" value="Não">
+            <label for="discipuladoNao">Não</label>
+        </div>
+
+        <div class="inline-group">
+            <label for="end">Já foi no END?</label><br>
+            <input type="radio" id="endSim" name="end" value="Sim">
+            <label for="endSim">Sim</label>
+            <input type="radio" id="endNao" name="end" value="Não">
+            <label for="endNao">Não</label>
+        </div>
+
+        <div class="inline-group">
+            <label for="batizado">Já foi Batizado?</label><br>
+            <input type="radio" id="batizadoSim" name="batizado" value="Sim">
+            <label for="batizadoSim">Sim</label>
+            <input type="radio" id="batizadoNao" name="batizado" value="Não">
+            <label for="batizadoNao">Não</label>
+        </div>
+        <br><br>
+
+        <h2>Resumo do Mês</h2>
+        <label for="totalConversaoMes">Total de conversão no Mês:</label>
+        <input type="text" id="totalConversaoMes" name="totalConversaoMes"><br><br>
+
+        <label for="totalMembrosFG">Total de Membros da Igreja que são membros do FG:</label>
+        <input type="text" id="totalMembrosFG" name="totalMembrosFG"><br><br>
+
+        <div class="inline-group">
+            <label for="fgFormacao">Tem algum FG em formação?</label><br>
+            <input type="radio" id="fgFormacaoSim" name="fgFormacao" value="Sim">
+            <label for="fgFormacaoSim">Sim</label>
+            <input type="radio" id="fgFormacaoNao" name="fgFormacao" value="Não">
+            <label for="fgFormacaoNao">Não</label>
+        </div>
+
+        <div class="inline-group">
+            <label for="membroNovo">Tem algum membro novo?</label><br>
+            <input type="radio" id="membroNovoSim" name="membroNovo" value="Sim">
+            <label for="membroNovoSim">Sim</label>
+            <input type="radio" id="membroNovoNao" name="membroNovo" value="Não">
+            <label for="membroNovoNao">Não</label>
+        </div>
+
+        <div class="inline-group">
+            <label for="realizouEvento">Realizou algum Evento?</label><br>
+            <input type="radio" id="realizouEventoSim" name="realizouEvento" value="Sim">
+            <label for="realizouEventoSim">Sim</label>
+            <input type="radio" id="realizouEventoNao" name="realizouEvento" value="Não">
+            <label for="realizouEventoNao">Não</label>
+        </div>
+
+        <label for="qualEvento">Se sim, qual?</label>
+        <input type="text" id="qualEvento" name="qualEvento"><br><br>
+
+        <label for="colunaMDA">Está em qual coluna do MDA?</label>
+        <select id="colunaMDA" name="colunaMDA">
+            <option value="Ainda não inserimos as 4 colunas.">Ainda não inserimos as 4 colunas.</option>
+            <option value="Purê de Batatas">Purê de Batatas</option>
+            <option value="GE">GE</option>
+            <option value="Natanael 3">Natanael 3</option>
+            <option value="Fator Barnabé">Fator Barnabé</option>
+        </select>
+        <br><br>
+
+        <button type="button" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
