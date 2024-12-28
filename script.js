@@ -8,7 +8,7 @@ function enviarWhatsApp() {
         message += `*${title}*\n\n`;  // Adiciona o título em negrito (formatação do WhatsApp)
     }
 
-    // Adiciona os títulos das seções em negrito
+    // Adiciona os títulos das seções em negrito e os dados de formulário
     addSectionTitle('Relatório Mensal Family Group');
     formData.forEach((value, key) => {
         if (key.includes('grupo') || key.includes('culto') || key.includes('cse')) {
@@ -39,13 +39,13 @@ function enviarWhatsApp() {
     });
 
     addSectionTitle('Resumo do Mês');
-    message += `Total de conversão no Mês: ${formData.get('totalConversaoMes')}\n`;
-    message += `Total de Membros da Igreja que são membros do FG: ${formData.get('totalMembrosFG')}\n`;
-    message += `Tem algum FG em formação? ${formData.get('fgFormacao')}\n`;
-    message += `Tem algum membro novo? ${formData.get('membroNovo')}\n`;
-    message += `Realizou algum Evento? ${formData.get('realizouEvento')}\n`;
-    message += `Se sim, qual? ${formData.get('qualEvento')}\n`;
-    message += `Está em qual coluna do MDA? ${formData.get('colunaMDA')}\n`;
+    message += `*Total de conversão no Mês:* ${formData.get('totalConversaoMes')}\n`;
+    message += `*Total de Membros da Igreja que são membros do FG:* ${formData.get('totalMembrosFG')}\n`;
+    message += `*Tem algum FG em formação?* ${formData.get('fgFormacao')}\n`;
+    message += `*Tem algum membro novo?* ${formData.get('membroNovo')}\n`;
+    message += `*Realizou algum Evento?* ${formData.get('realizouEvento')}\n`;
+    message += `*Se sim, qual?* ${formData.get('qualEvento')}\n`;
+    message += `*Está em qual coluna do MDA?* ${formData.get('colunaMDA')}\n`;
 
     // Verifica se todos os campos estão preenchidos
     let allFieldsFilled = true;
