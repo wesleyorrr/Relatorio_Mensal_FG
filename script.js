@@ -5,20 +5,21 @@ function enviarWhatsApp() {
 
     // Verifica se todos os campos estão preenchidos
     let allFieldsFilled = true;
-    for (let [key, value] of formData.entries()) {
-        if (!value.trim()) {
-            alert(`Por favor, preencha o campo: ${key}`);
+    formData.forEach((value, key) => {
+        if (!value) {
             allFieldsFilled = false;
-            break;
         }
+    });
+
+    if (!allFieldsFilled) {
+        alert("Por favor, preencha todos os campos antes de enviar.");
+        return;
     }
 
-    if (allFieldsFilled) {
-        formData.forEach((value, key) => {
-            message += `${key}: ${value}\n`;
-        });
+    formData.forEach((value, key) => {
+        message += `${key}: ${value}\n`;
+    });
 
-        const whatsappUrl = `https://api.whatsapp.com/send?phone=<SEU_NUMERO_DE_TELEFONE>&text=${encodeURIComponent(message)}`;
-        window.open(whatsappUrl, '_blank');
-    }
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=<SEU_NUMERO_DE_TELEFONE>&text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
 }

@@ -78,6 +78,10 @@ th, td {
     font-size: 0.75em; /* Further reduced font size for compactness */
 }
 
+.table-responsive {
+    overflow-x: auto; /* Enable horizontal scroll */
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
     form {
@@ -103,10 +107,5 @@ th, td {
 
     th, td {
         font-size: 0.7em;
-    }
-
-    .compact-table th, .compact-table td {
-        padding: 3px; /* Further reduced padding for compactness */
-        font-size: 0.65em; /* Further reduced font size for compactness */
     }
 }
